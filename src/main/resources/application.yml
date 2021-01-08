@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: @project.artifactId@
+  cloud:
+    config:
+      name: aservicename
+      fail-fast: true
+      token: <vault-token>
+  config:
+    import: configserver:<url-to-config-server>
